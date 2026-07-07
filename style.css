@@ -49,6 +49,14 @@ nav ul li a {
     padding: 10px 20px;
     font-weight: 600;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+
+.btn:hover{
+    background-color: #FFF8F3;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
 }
 
 /* Hero Section CSS */
@@ -58,8 +66,11 @@ nav ul li a {
     align-items: center;
 }
 
-.hero-section img{
-    max-width:60%;
+.hero-img-container{
+    max-width:100%;
+    min-width: 584 px;
+    min-height: 676px;
+    object-fit: cover;
 }
 
 .white {
@@ -69,13 +80,13 @@ nav ul li a {
     margin-left: 2%;
 }
 
-header , body {
-    background-color:#FFF8F3;
+header,.about-me-main,.root_color {
+    background-color: #FFF8F3;
 }
 
 .hero-text {
     color: #474747;
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 
 
@@ -85,11 +96,38 @@ header , body {
     font-size: 3rem;
 }
 
-.hero p{
+.paragraph01 {
     color: #757575;
+}
+
+.p-margin{
     margin: 30px 0;
 }
 
+.sect-heading {
+    color: #181818;
+    font-size: 35px;
+}
 
 
+.bold-small-text {
+    color: #474747;
+    font-size: medium;
+    font-weight: 600;
+}
+
+
+/* About me section CSS */
+
+.about-me-main {
+    margin: 80px 30px;
+    padding: 100px 130px;
+    text-align: center;
+}
+
+.abtsec {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
