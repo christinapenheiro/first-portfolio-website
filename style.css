@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
 }
 
 .visual{
@@ -56,7 +57,7 @@ nav ul li a {
 .btn:hover{
     background-color: #FFF8F3;
     color: #FD6E0A;
-    border: 1px solid #FD6E0A;
+    border: 1px solid transparent;
 }
 
 /* Hero Section CSS */
@@ -68,7 +69,7 @@ nav ul li a {
 
 .hero-img-container{
     max-width:100%;
-    min-width: 584 px;
+    min-width:584 px;
     min-height: 676px;
     object-fit: cover;
 }
@@ -101,7 +102,8 @@ header,.about-me-main,.root_color {
 }
 
 .p-margin{
-    margin: 30px 0;
+    margin: 30px 0px;
+    padding: 0;
 }
 
 .sect-heading {
@@ -113,14 +115,14 @@ header,.about-me-main,.root_color {
 .bold-small-text {
     color: #474747;
     font-size: medium;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
 /* About me section CSS */
 
 .about-me-main {
-    margin: 80px 30px;
+    margin: 100px auto;
     padding: 100px 130px;
     text-align: center;
 }
@@ -131,3 +133,23 @@ header,.about-me-main,.root_color {
     justify-content: space-between;
 }
 
+.doh,.poh{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box img,
+.box h3,
+.box p {
+    margin-bottom: 15px !important;
+}
+
+.box {
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
